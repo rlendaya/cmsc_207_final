@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  align-content: center;
+  background-color: #bed754;
+}
+
+.logo {
+  width: 30vw;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 0 0 5%;
+  background-color: 191919;
+}
+
+.navLinks {
+  width: 15vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #2e2d29;
+  font-family: Roboto;
+  font-size: 2rem;
+}
+
+.navLinks:hover {
+  background-color: #2e2d29;
+  color: #bed754;
+}
+
+.filler {
+  background-color: BED754;
+  width: 30vw;
+}
+
+.loginHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25vh 0 25% 0;
+}
