@@ -1,50 +1,101 @@
 * {
   margin: 0;
   font-family: Roboto;
+  /* overflow: hidden; */
 }
 
 .header {
   display: flex;
   flex-direction: row;
   height: 10vh;
-  align-content: center;
-  background-color: #bed754;
+  justify-content: space-between;
+  background-color: #545454;
 }
 
 .logo {
-  width: 30vw;
+  /* flex-grow: 2; */
+  /* align-content: center; */
 }
 
 .logo img {
+  /* background-color: #4caf50; */
   max-width: 100%;
   max-height: 100%;
-  margin: 0 0 0 5%;
-  background-color: 191919;
+}
+
+.navBar {
+  display: inherit;
 }
 
 .navLinks {
-  width: 15vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #2e2d29;
-  font-family: Roboto;
-  font-size: 2rem;
+  color: white;
+  font-size: 2em;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  align-content: center;
 }
 
 .navLinks:hover {
-  background-color: #2e2d29;
-  color: #bed754;
+  background-color: #90a583;
+  color: white;
 }
 
-.filler {
-  background-color: BED754;
-  width: 30vw;
-}
+/* Start of CSS for container``*/
 
-.loginHeader {
+.middleContainer {
+  position: relative;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 25vh 0 25% 0;
+  background-image: url("./mcjoski_nav_pic.jpg");
+  background-size: 100% 100%;
+}
+.loginContainer {
+  /* display: flex; */
+  top: 50%;
+  background-color: #545454;
+  padding: 1vw;
+  border-radius: 1%;
+  width: 25vw;
+  top: 50%;
+  left: 50%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+label {
+  font-weight: bold;
+  color: white;
+  /* margin-bottom: 10px; */
+}
+
+input[type="email"],
+input[type="password"] {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 0.1em solid #545454;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+button[type="submit"] {
+  background-color: #fede5a;
+  color: black;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.25em;
 }
