@@ -9,7 +9,7 @@
   flex-direction: row;
   height: 10vh;
   justify-content: space-between;
-  background-color: #545454;
+  background-color: #fede59;
 }
 
 .logo {
@@ -28,7 +28,7 @@
 }
 
 .navLinks {
-  color: white;
+  color: black;
   font-size: 2em;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -36,8 +36,8 @@
 }
 
 .navLinks:hover {
-  background-color: #90a583;
-  color: white;
+  background-color: #bea953;
+  color: #545454;
 }
 
 /* Start of CSS for container``*/
@@ -98,4 +98,53 @@ button[type="submit"] {
   cursor: pointer;
   width: 100%;
   font-size: 1.25em;
+}
+
+.footer {
+  background-color: #fede59;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+}
+
+.footer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.contactUs img {
+  max-width: 2em;
+  max-height: 1.5em;
+}
+
+.aboutUsMiddleContainer {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("./mcjoski_nav_pic.jpg");
+  background-size: 100% 100%; */
+}
+
+div a {
+  text-decoration: none;
 }
