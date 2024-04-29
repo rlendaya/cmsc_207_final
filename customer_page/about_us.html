@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -11,40 +13,73 @@
     <title>About Us</title>
   </head>
   <body>
+    <!-- Start of code for the banner which includes the following:
+    
+      1. Logo
+      2. Links for the navigation
+    -->
+
     <div class="header">
-      <div class="logo"><img src="./mcjoski_logo.png" alt="logo" /></div>
+      <div class="logo">
+        <a href="./index.html"><img src="./mcjoski_logo.png" alt="logo" /></a>
+      </div>
       <!-- <div class="filler"></div> -->
 
       <div class="navBar">
         <div class="navLinks"><a href="./index.html">Home</a></div>
-        <div class="navLinks"><a href="./"></a>Services</div>
+        <div class="navLinks">Services</div>
         <div class="navLinks"><a href="./about_us.html">About Us</a></div>
         <div class="navLinks">Contact Us</div>
       </div>
     </div>
 
     <div class="aboutUsMiddleContainer">
-      <p></p>
+      <div>
+        <p class="paragraphContainer">
+          McJoski Enterprise Corporation is a company that provides logistics
+          solution such as transportation of goods and hauling of materials. Its
+          office is located at Brgy. Canlubang, Calamba City.
+        </p>
+        <br />
+        <p class="paragraphContainer">
+          McJoski Enterprise Corporation was founded by Mark Henry Endaya, a
+          graduate of B.S. Entrepreneurship at Mapua-Malayan Colleges Laguna. He
+          established the company in 2018 after gaining many years of experience
+          in managing multiple businesses of his family. The name of the company
+          was named after his brother, Josh, who passed away in 2015.
+        </p>
+        <br />
+        <p class="paragraphContainer">
+          The company started with only two employees and eventually grew to 12
+          employees. The company has served multiple FMCG and logistics
+          companies around Calamba City and they have now expanded to other
+          areas such as Cabuyao City and Batangas City. In 2022 they expanded
+          their services and added hauling of construction materials.
+        </p>
+      </div>
     </div>
 
     <div class="footer">
-      <div><img src="./m`cjoski_logo.png" alt="logo" /></div>
+      <div><img src="./mcjoski_logo.png" alt="logo" /></div>
 
-      <div class="address">
-        <p>Address:</p>
-        <br />
+      <div class="footerContainer">
+        <p class="footerHeaders">Address:</p>
         <p>B13 L8 Lawaan, Calamba, 4027 Laguna</p>
       </div>
-      <div class="contactUs">
-        <p>Contact Us</p>
-        <br />
+      <div class="footerContainer">
+        <p class="footerHeaders">Contact Us</p>
         <p>Email: mcjoski.mgmt@gmail.com</p>
         <p>Tel: +63 919-093-0349 / +63 968-772-5686</p>
+      </div>
+
+      <div class="footerContainer">
+        <p class="footerHeaders">Social Media</p>
         <a
           href="https://www.facebook.com/mcjoskienterprisecorp"
           target="_blank"
         >
           <img
+            class="socialMediaLogo"
             src="./facebook-logo-icon-facebook-logo-png-transparent-svg-vector-bie-supply-16.png"
             alt="facebook logo"
           />

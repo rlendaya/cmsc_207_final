@@ -130,11 +130,35 @@ button[type="submit"] {
 .aboutUsMiddleContainer {
   position: relative;
   height: 80vh;
+  width: 100vw;
+}
+
+.aboutUsMiddleContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./mcjoski_nav_pic.jpg");
+  background-size: cover;
+  opacity: 0.15;
+}
+
+.aboutUsMiddleContainer div {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 5rem;
+  opacity: 1;
 }
 
 div a {
   text-decoration: none;
+}
+
+.paragraphContainer {
+  font-size: 1.5rem;
+  max-width: 90%;
+  opacity: 1;
 }
