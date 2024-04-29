@@ -1,7 +1,7 @@
 * {
   margin: 0;
   font-family: Roboto;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .header {
@@ -10,11 +10,6 @@
   height: 10vh;
   justify-content: space-between;
   background-color: #fede59;
-}
-
-.logo {
-  /* flex-grow: 2; */
-  /* align-content: center; */
 }
 
 .logo img {
@@ -103,6 +98,8 @@ button[type="submit"] {
 .footer {
   background-color: #fede59;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   height: 10vh;
 }
@@ -112,27 +109,22 @@ button[type="submit"] {
   max-height: 100%;
 }
 
-.address {
+.footerContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.contactUs {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
+.socialMediaLogo {
+  width: 2rem;
 }
 
-.contactUs img {
-  max-width: 2em;
-  max-height: 1.5em;
+.footerHeaders {
+  font-size: 1eem;
+  font-weight: bold;
 }
 
 .aboutUsMiddleContainer {
@@ -141,8 +133,6 @@ button[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url("./mcjoski_nav_pic.jpg");
-  background-size: 100% 100%; */
 }
 
 div a {
