@@ -62,19 +62,19 @@ h1 {
   font-size: 24px;
 }
 
-form {
+.middleContainer form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-label {
+.middleContainer label {
   font-weight: bold;
   color: white;
   /* margin-bottom: 10px; */
 }
 
-input[type="email"],
+.middleContainer input[type="email"],
 input[type="password"] {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -155,10 +155,63 @@ button[type="submit"] {
 
 div a {
   text-decoration: none;
+  color: black;
 }
 
 .paragraphContainer {
   font-size: 1.5rem;
   max-width: 90%;
   opacity: 1;
+}
+
+/* Contact Us Page CSS */
+
+.contactUsMiddleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactUsMiddleContainer h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contactUsLoginContainer {
+  width: 30%;
+  padding-bottom: 1rem;
+}
+
+.contactUsMiddleContainer p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contactUsLoginContainer .form-group {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.contactUsLoginContainer label {
+  color: black;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.contactUsLoginContainer input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.contactUsLoginContainer button {
+  width: 20%;
+  border-radius: 1rem;
+  margin-left: 40%;
+  font-weight: bold;
+  padding: 0.5rem;
 }
