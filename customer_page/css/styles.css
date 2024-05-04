@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./mcjoski_nav_pic.jpg");
+  background-image: url("../img/mcjoski_nav_pic.jpg");
   background-size: 100% 100%;
 }
 .loginContainer {
@@ -140,7 +140,7 @@ button[type="submit"] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("./mcjoski_nav_pic.jpg");
+  background-image: url("../img/mcjoski_nav_pic.jpg");
   background-size: cover;
   opacity: 0.15;
 }
