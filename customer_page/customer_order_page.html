@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles_order_form.css" />
+    <script src="./script/customer_order_form.js" defer></script>
+    <title>Customer Order Form</title>
+  </head>
+  <body>
+    <!-- Start of code for the banner which includes the following:
+    
+      1. Logo
+      2. Links for the navigation
+    -->
+
+    <div class="header">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./img/mcjoski_logo.png" alt="logo"
+        /></a>
+      </div>
+      <!-- <div class="filler"></div> -->
+
+      <div class="navBar">
+        <div class="navLinks"><a href="./index.html">Home</a></div>
+        <div class="navLinks"><a href="./about_us.html">About Us</a></div>
+        <div class="navLinks"><a href="./contact_us.html">Contact Us</a></div>
+      </div>
+    </div>
+
+    <div class="middleContainer" id="orderContainer">
+      <div id="orderForm">
+        <form>
+          <div id="formContainers">
+            <div id="senderContainer">
+              <h2>Sender Details</h2>
+              <!-- Form inputs for Sender -->
+              <label for="companyName">Company Name</label>
+              <input type="text" name="companyName" id="companyName" />
+
+              <label for="senderContactPerson">Contact Person</label>
+              <input
+                type="text"
+                name="senderContactPerson"
+                id="senderContactPerson"
+              />
+              <label for="senderEmail">Email Address</label>
+              <input type="text" name="senderEmail" id="senderEmail" />
+              <label for="pickUpAddress">Pick Up Address</label>
+              <input type="text" name="pickUpAddress" id="pickUpAddress" />
+              <label for="pickUpDate">Pick Up Date</label>
+              <input type="date" name="pickUpDate" id="pickUpDate" />
+            </div>
+            <!-- Inputs for receiver -->
+            <div id="receiverContainer">
+              <h2>Receiver Details</h2>
+
+              <label for="receiverName">Receiver Name</label>
+              <input type="text" name="receiverName" id="receiverName" />
+              <label for="deliveryAddress">Delivery Address</label>
+              <input type="text" name="deliveryAddress" id="deliveryAddress" />
+              <label for="deliveryDate">Target Delivery Date</label>
+              <input type="date" name="deliveryDate" id="deliveryDate" />
+            </div>
+          </div>
+          <!-- Submit button -->
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    s
+    <div class="footer">
+      <div><img src="./img/mcjoski_logo.png" alt="logo" /></div>
+
+      <div class="footerContainer">
+        <p class="footerHeaders">Address:</p>
+        <p>B13 L8 Lawaan, Calamba, 4027 Laguna</p>
+      </div>
+      <div class="footerContainer">
+        <p class="footerHeaders">Contact Us</p>
+        <p>Email: mcjoski.mgmt@gmail.com</p>
+        <p>Tel: +63 919-093-0349 / +63 968-772-5686</p>
+      </div>
+
+      <div class="footerContainer">
+        <p class="footerHeaders">Social Media</p>
+        <a
+          href="https://www.facebook.com/mcjoskienterprisecorp"
+          target="_blank"
+        >
+          <img
+            class="socialMediaLogo"
+            src="./img/facebook-logo-icon-facebook-logo-png-transparent-svg-vector-bie-supply-16.png"
+            alt="facebook logo"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
