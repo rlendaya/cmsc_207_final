@@ -16,7 +16,7 @@ orderForm.addEventListener("submit", function (event) {
   var pickUpDate = document.getElementById("pickUpDate").value;
   var receiverName = document.getElementById("receiverName").value;
   var deliveryAddress = document.getElementById("deliveryAddress").value;
-  var deliverydate = document.getElementById("deliveryDate").value;
+  var deliveryDate = document.getElementById("deliveryDate").value;
 
   // Condition to check if email and message is not blank
   if (
