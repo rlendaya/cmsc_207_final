@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dispatch_page/css/dispatch.css" />
+    <script src="./script/login.js" defer></script>
+    <title>Dispatch Page</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="./dispatch_main.html"
+          ><img src="./img/mcjoski_logo.png" alt="logo"
+        /></a>
+      </div>
+      <!-- <div class="filler"></div> -->
+
+      <div class="navBar">
+        <div class="navLinks">
+          <p>McJoski Dispatch Page</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start of HTML code for Forms -->
+
+    <div id="formContainer">
+      <form action="#">
+        <div id="customerInfo" class="dispatchInfoContainer">
+          <h2>Customer Information</h2>
+          <div class="labelInput">
+            <label for="customerName">Name</label>
+            <input type="text" id="customerName" />
+          </div>
+          <div class="labelInput">
+            <label for="customerEmail">Email</label>
+            <input type="email" id="customeremail" name="customerEmail" />
+          </div>
+          <div class="labelInput">
+            <label for="customerAddress">Address</label>
+            <input type="text" id="customerAddress" name="customerAddress" />
+          </div>
+        </div>
+
+        <!-- Order information start -->
+        <div id="orderInfo" class="dispatchInfoContainer">
+          <h2>Order Information</h2>
+          <div class="orderInfoSubContainer">
+            <div class="orderInfolabel">
+              <label for="orderId">Order Id</label>
+              <label for="senderContactName">Sender Name</label>
+              <label for="pickUpAddress">Pickup Address</label>
+              <label for="pickUpDate">Pickup Date</label>
+              <label for="receiverName">Receiver Name</label>
+              <label for="deliveryAddress">Delivery Address</label>
+              <label for="deliveryDate">Delivery Date</label>
+            </div>
+
+            <div class="orderInfoInputs">
+              <input type="text" id="orderId" />
+              <input
+                type="text"
+                id="senderContactName"
+                name="senderContactName"
+              />
+              <input type="text" id="pickUpAddress" name="pickUpAddress" />
+              <input type="date" id="pickUpDate" name="pickUpDate" />
+              <input type="text" id="receiverName" name="receiverName" />
+              <input type="text" id="deliveryAddress" name="deliveryAddress" />
+              <input type="date" id="deliveryDate" name="deliveryDate" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Information -->
+        <div id="productInfo" class="dispatchInfoContainer">
+          <h2>Product Information</h2>
+          <div class="orderInfoSubContainer">
+            <div class="productInfolabel">
+              <label for="productType">Product Type</label>
+              <label for="productDescription">Product Description</label>
+              <label for="totalWeight">Total Package Weight</label>
+              <label for="numberofPallets">Number of Pallets</label>
+
+              <label for="totalPrice">Total Price</label>
+            </div>
+
+            <div class="productInfoInputs">
+              <input type="text" name="productType" id="productType" />
+              <input
+                type="text"
+                name="productDescription"
+                id="productDescription"
+              />
+              <div id="productInfoWeightInput">
+                <input
+                  type="number"
+                  name="totalWeight"
+                  id="totalWeight"
+                  min="0"
+                />
+                <label for="kg">kg</label>
+                <input
+                  type="radio"
+                  id="kg"
+                  name="units"
+                  value="kilograms"
+                  checked
+                />
+                <label for="lbs">lbs</label>
+                <input type="radio" id="lbs" name="units" value="lbs" />
+              </div>
+              <input
+                type="number"
+                id="numberofPallets"
+                name="numberofPallets"
+                min="0"
+              />
+              <input type="number" id="totalPrice" name="totalPrice" min="0" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Driver Info -->
+        <div id="driverInfo" class="dispatchInfoContainer">
+          <h2>Driver Information</h2>
+          <div class="orderInfoSubContainer">
+            <div class="driverInfoLabel">
+              <label for="driverFirstName">First Name</label>
+              <label for="driverMiddleName">Middle Name</label>
+              <label for="driverLastName">Last Name</label>
+              <label for="licenseNumber">License Number</label>
+            </div>
+
+            <div class="productInfoInputs">
+              <input type="text" name="driverFirstName" id="driverFirstName" />
+              <input
+                type="text"
+                name="driverMiddleName"
+                id="driverMiddleName"
+              />
+              <input type="text" name="driverLastName" id="driverLastName" />
+              <input type="text" name="licenseNumber" id="licenseNumber" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Truck Information -->
+        <div id="truckInfo" class="dispatchInfoContainer">
+          <h2>Truck Information</h2>
+          <div id="truckInfo">
+            <label for="truckPlate">Plate Number</label>
+            <input type="text" name="truckPlate" id="truckPlate" />
+          </div>
+        </div>
+
+        <div class="submitButton">
+          <button type="submit">Save Information</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+
+      <!-- Start of footer code -->
+    </div>
+  </body>
+</html>
